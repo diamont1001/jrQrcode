@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>jrQrcode test</title>
+<style>
+    body{ font-family: "Microsoft YaHei"; }
+</style>
+</head>
+<body>
+    <img id="qrimg" src="">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/min/jrQrcode.min.js"></script>
+<script>
+    var data = jrQrcode.getQrBase64("测试二维码qrcode8888", {
+        padding: 35,
+        width: 350,
+        height: 350,
+        correctLevel: QRErrorCorrectLevel.L
+    });
+    $("#qrimg").attr("src", data);
+
+</script>
+</body>
+</html>
