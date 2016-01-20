@@ -2,7 +2,7 @@
 把字符串生成二维码，并以Base64编码形式输出
 
 ## 插件引用  
-如果页面上已有jquery或者zepto，刚不用再引入jquery-1.7.1.min.js
+如果页面上已有jquery或者zepto，则不用再引入jquery-1.7.1.min.js
 
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/min/jrQrcode.min.js"></script>
