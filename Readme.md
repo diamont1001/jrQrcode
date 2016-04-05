@@ -1,6 +1,9 @@
 # 二维码js生成库
 把字符串生成二维码，并以Base64 URL形式输出
 
+## 安装
+	npm install jr-qrcode
+
 ## 插件引用  
 如果页面上已有jQuery或者zepto，则不用再引入zepto.min.js
 
