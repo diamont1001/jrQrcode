@@ -1,8 +1,14 @@
 # 二维码js生成库
 把字符串生成二维码，并以Base64 URL形式输出
 
+## 插件引用  
+如果页面上已有jQuery或者zepto，则不用再引入zepto.min.js
+
+    <script type="text/javascript" src="dist/zepto.min.js"></script>
+	<script type="text/javascript" src="dist/jr-qrcode.min.js"></script>
+
 ## 用法
-    jrQrcode.getQrBase64(text, options);
+    var imgBase64 = jrQrcode.getQrBase64(text, options);
     @param: text: 要生成二维码的字符，支持中文
     @param: options: {
         padding		: 10,   //二维码四边空白，默认为10px
