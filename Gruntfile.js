@@ -13,8 +13,8 @@ module.exports = function (grunt) {
             },
             "my_target": {
                 "files": {
-                    //'js/min/libs.min.js': ['js/jquery-1.7.1.min.js'],
-                    'js/min/jrQrcode.min.js': ['js/qrcode.js', 'js/jquery.qrcode.js', 'js/jrQrcode.js']
+                    'dist/zepto.min.js': ['src/zepto.min.js'],
+                    'dist/jr-qrcode.min.js': ['src/qrcode.js', 'src/jquery.qrcode.js', 'src/jr-qrcode.js']
                 }
             }
         }

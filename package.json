@@ -1,19 +1,37 @@
 {
-    "name": "common",
-    "version": "1.0.0",
-    "description": "common config for package.json",
-    "license": "MIT",
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-contrib-jshint": "~0.6.3",
-        "grunt-contrib-concat": "~0.3.0",
-        "grunt-contrib-uglify": "~0.2.1",
-        "grunt-contrib-requirejs": "~0.4.1",
-        "grunt-contrib-copy": "~0.4.1",
-        "grunt-contrib-clean": "~0.5.0",
-        "grunt-strip": "~0.2.1"
-    },
-    "dependencies": {
-        "express": "3.x"
-    }
+  "name": "jr-qrcode",
+  "version": "1.0.1",
+  "description": "lib for qrcode by zepto/jquery.",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-strip": "~0.2.1"
+  },
+  "dependencies": {
+    "zepto": ">=1.0.1"
+  },
+  "main": "dist/jr-qrcode.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diamont1001/jrQrcode.git"
+  },
+  "keywords": [
+    "qr",
+    "qrcode",
+    "base64"
+  ],
+  "author": "diamont1001",
+  "bugs": {
+    "url": "https://github.com/diamont1001/jrQrcode/issues"
+  },
+  "homepage": "https://github.com/diamont1001/jrQrcode#readme"
 }

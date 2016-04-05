@@ -91,4 +91,4 @@
 			$(element).appendTo(this);
 		});
 	};
-})( jQuery );
+})( $ );
