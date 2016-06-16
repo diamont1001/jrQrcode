@@ -30,3 +30,6 @@
     	Q : 3,
     	H : 2
     };
+
+## 线上例子  
+*	[UC二维码Chrome插件](https://chrome.google.com/webstore/detail/uc-qr-code/nhelohnehpahakjoklmodmogclacjgdj?spm=0.0.0.0.Xew8fP&hl=zh-CN "UC二维码Chrome插件")
