@@ -1,7 +1,7 @@
 {
   "name": "jr-qrcode",
-  "version": "1.0.2",
-  "description": "lib for qrcode by zepto/jquery.",
+  "version": "1.0.3",
+  "description": "qrcode generator",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -13,11 +13,10 @@
     "grunt-contrib-clean": "~0.5.0",
     "grunt-strip": "~0.2.1"
   },
-  "dependencies": {
-    "zepto": ">=1.0.1"
-  },
-  "main": "dist/jr-qrcode.min.js",
+  "dependencies": {},
+  "main": "index.js",
   "scripts": {
+    "release": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

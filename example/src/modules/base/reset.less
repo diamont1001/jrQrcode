@@ -1,0 +1,123 @@
+@charset "utf-8";
+/**
+ * reset.less
+ * 每个页面都应该引入一份
+ * Created by Chenjr on 2015/7/7.
+ */
+
+/* reset */
+html,body{overflow-x:hidden}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img,iframe{border:0 none}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:400}
+ol,ul,li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}
+q:before,q:after{content:''}
+a{text-decoration:none}
+
+/* 文字排版 */
+.f12{font-size:12px}
+.f13{font-size:13px}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.f20{font-size:20px}
+.fb{font-weight:700}
+.fn{font-weight:400}
+.fi{font-style:italic}
+.t2{text-indent:2em}
+.unl{text-decoration:underline}
+.no_unl{text-decoration:none}
+
+/* 定位 */
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.bc{margin-left:auto;margin-right:auto}
+.fl{float:left;display:inline}
+.fr{float:right;display:inline}
+.cb{clear:both;height:0;line-height:0;font-size:0}
+.cl{clear:left}
+.cr{clear:right}
+.clearfix:after{content:'';display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*height:1%}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.abs-right{position:absolute;right:0}
+.zoom{zoom:1}
+.hidden{visibility:hidden}
+.none{display:none}
+.block{display:block}
+.iblock{display:inline-block}
+
+/* 长度高度 */
+.w{width:100%}
+.h{height:100%}
+
+/* 边距 */
+.m10{margin:10px}
+.m15{margin:15px}
+.m30{margin:30px}
+.mt5{margin-top:5px}
+.mt0{margin-top:0}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt30{margin-top:30px}
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb30{margin-bottom:30px}
+.ml5{margin-left:5px}
+.ml10{margin-left:10px}
+.ml15{margin-left:15px}
+.ml20{margin-left:20px}
+.ml30{margin-left:30px}
+.mr5{margin-right:5px}
+.mr10{margin-right:10px}
+.mr15{margin-right:15px}
+.mr20{margin-right:20px}
+.mr30{margin-right:30px}
+.p10{padding:10px}
+.p15{padding:15px}
+.p30{padding:30px}
+.pt5{padding-top:5px}
+.pt10{padding-top:10px}
+.pt15{padding-top:15px}
+.pt20{padding-top:20px}
+.pt30{padding-top:30px}
+.pb5{padding-bottom:5px}
+.pb10{padding-bottom:10px}
+.pb15{padding-bottom:15px}
+.pb20{padding-bottom:20px}
+.pb30{padding-bottom:30px}
+.pl5{padding-left:5px}
+.pl10{padding-left:10px}
+.pl15{padding-left:15px}
+.pl20{padding-left:20px}
+.pl30{padding-left:30px}
+.pr5{padding-right:5px}
+.pr10{padding-right:10px}
+.pr15{padding-right:15px}
+.pr20{padding-right:20px}
+.pr30{padding-right:30px}
+
+
+/* custom */
+body {
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+}
+a {
+  color: #404040;
+  //-webkit-backface-visibility: hidden; // 隐藏背面，解决IOS透视BUG，但不能在公共里加，因为用到了3D加速
+}
+ul {
+  display: inline-block;
+  vertical-align: top;
+}
+img {
+  vertical-align: top;
+}

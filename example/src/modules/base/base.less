@@ -1,0 +1,100 @@
+@charset "utf-8";
+/**
+ * base.less
+ * Created by Chenjr on 2015/7/7.
+ */
+
+@colorMain: #22c485; // 页面主颜色
+@colorBorder: #eee; // 边框颜色
+@colorBorderBtn: #c3c3c3; // 按钮边框颜色
+@colorTitle: #404040; // 标语颜色
+@colorText: #666; // 正文颜色
+@colorGray: #999; // 正文颜色 - 灰
+@colorTips: #c3c3c3; // 提示语颜色
+@colorTag: #f95c27; // 标签颜色
+
+@bannerHeight: 144px;
+
+// 单行显示点点点
+.dot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 多行显示点点点
+.dots(@col) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: @col;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+/*去掉点击后出现的蓝色背景*/
+.tapNone{ -webkit-tap-highlight-color: transparent; }
+
+body {
+  color: @colorText;
+  line-height: 16px;
+
+  // 只有header 或 header2
+  &.top-1 {
+    padding-top: 50px;
+  }
+  // 有header 和 nav
+  &.top-11 {
+    padding-top: 95px;
+  }
+}
+
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.border-radius(@n) {
+  -webkit-border-radius: @n;
+  -moz-border-radius: @n;
+  -ms-border-radius: @n;
+  -o-border-radius: @n;
+  border-radius: @n;
+}
+
+.rotate(@n) {
+  transform: rotate(@n);
+  -webkit-transform: rotate(@n);
+  -ms-transform: rotate(@n);
+  -moz-transform: rotate(@n);
+  -o-transform: rotate(@n);
+}
+
+// 实心按钮
+.base-btn {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  background: @colorMain;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
+
+// 空心按钮
+.base-btn-border {
+  width: 60px;
+  height: 30px;
+  line-height: 29px;
+  border: 1px solid @colorMain;
+  border-radius: 3px;
+  background: white;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  color: @colorMain;
+  .border-box;
+}
