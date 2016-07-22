@@ -1,23 +1,25 @@
 {
   "name": "jr-qrcode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "qrcode generator",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.1",
-    "grunt-contrib-requirejs": "~0.4.1",
-    "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-strip": "~0.2.1"
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-strip": "~0.2.1",
+    "jest-cli": "^13.2.3"
   },
   "dependencies": {},
   "main": "index.js",
   "scripts": {
     "release": "grunt",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint index.js lib/jr-qrcode.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
