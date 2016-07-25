@@ -10,9 +10,7 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-requirejs": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.1",
-    "grunt-strip": "~0.2.1",
-    "jest-cli": "^13.2.3"
+    "grunt-contrib-uglify": "~0.2.1"
   },
   "dependencies": {},
   "main": "index.js",
