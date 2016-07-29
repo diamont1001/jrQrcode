@@ -5,7 +5,7 @@
     <title>Jrqrcode by diamont1001</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -20,23 +20,41 @@
 
     <section class="main-content">
       <h1>
-<a id="二维码js生成库" class="anchor" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81js%E7%94%9F%E6%88%90%E5%BA%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>二维码js生成库</h1>
+<a id="二维码js生成库" class="anchor" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81js%E7%94%9F%E6%88%90%E5%BA%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>二维码js生成库</h1>
 
-<p>把字符串生成二维码，并以Base64编码形式输出</p>
+<p>把字符串生成二维码，并以Base64 URL形式输出</p>
 
 <h2>
-<a id="插件引用" class="anchor" href="#%E6%8F%92%E4%BB%B6%E5%BC%95%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>插件引用</h2>
+<a id="兼容性" class="anchor" href="#%E5%85%BC%E5%AE%B9%E6%80%A7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>兼容性</h2>
 
-<p>如果页面上已有jquery或者zepto，刚不用再引入jquery-1.7.1.min.js</p>
+<p>插件使用了H5的canvas特性进行二维码绘制，最后输出base64 url，因些本插件要求运行环境支持canvas特性即可。</p>
 
-<pre><code>&lt;script type="text/javascript" src="js/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="js/min/jrQrcode.min.js"&gt;&lt;/script&gt;
+<h2>
+<a id="安装" class="anchor" href="#%E5%AE%89%E8%A3%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安装</h2>
+
+<pre><code>npm install jr-qrcode
 </code></pre>
 
 <h2>
-<a id="用法" class="anchor" href="#%E7%94%A8%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>用法</h2>
+<a id="插件引用" class="anchor" href="#%E6%8F%92%E4%BB%B6%E5%BC%95%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>插件引用</h2>
+
+<h3>
+<a id="传统引用" class="anchor" href="#%E4%BC%A0%E7%BB%9F%E5%BC%95%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>传统引用</h3>
+
+<pre><code>&lt;script type="text/javascript" src="release/jr-qrcode.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>
+<a id="模块化引用比如webpack" class="anchor" href="#%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%95%E7%94%A8%E6%AF%94%E5%A6%82webpack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>模块化引用(比如：webpack)</h3>
+
+<pre><code>require('jr-qrcode');
+</code></pre>
+
+<h2>
+<a id="用法" class="anchor" href="#%E7%94%A8%E6%B3%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>用法</h2>
 
 <pre><code>var imgBase64 = jrQrcode.getQrBase64(text, options);
+
 @param: text: 要生成二维码的字符，支持中文
 @param: options: {
     padding     : 10,   //二维码四边空白，默认为10px
@@ -46,19 +64,27 @@
     background      : "#ffffff",    //二维码颜色
     foreground      : "#000000"     //二维码背景颜色
 }
-@return: 生成的二维码Base64字符串
+@return: 生成的二维码Base64 URL
 </code></pre>
 
 <h2>
-<a id="二维码容错级别" class="anchor" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%AE%B9%E9%94%99%E7%BA%A7%E5%88%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>二维码容错级别</h2>
+<a id="二维码容错级别" class="anchor" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%AE%B9%E9%94%99%E7%BA%A7%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>二维码容错级别</h2>
 
-<pre><code>var QRErrorCorrectLevel = {
+<pre><code>QRErrorCorrectLevel = {
     L : 1,
     M : 0,
     Q : 3,
     H : 2
 };
 </code></pre>
+
+<h2>
+<a id="线上例子" class="anchor" href="#%E7%BA%BF%E4%B8%8A%E4%BE%8B%E5%AD%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>线上例子</h2>
+
+<ul>
+<li>  <a href="https://chrome.google.com/webstore/detail/uc-qr-code/nhelohnehpahakjoklmodmogclacjgdj?spm=0.0.0.0.Xew8fP&amp;hl=zh-CN" title="UC二维码Chrome插件">UC二维码Chrome插件</a>
+</li>
+</ul>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/diamont1001/jrQrcode">Jrqrcode</a> is maintained by <a href="https://github.com/diamont1001">diamont1001</a>.</span>
@@ -71,4 +97,3 @@
   
   </body>
 </html>
-
