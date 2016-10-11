@@ -48,6 +48,10 @@
 <a id="模块化引用比如webpack" class="anchor" href="#%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%95%E7%94%A8%E6%AF%94%E5%A6%82webpack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>模块化引用(比如：webpack)</h3>
 
 <pre><code>require('jr-qrcode');
+
+// 支持变量引用
+var jrQrcode = require('jr-qrcode');
+var imgBase64 = jrQrcode.getQrBase64('hello world');
 </code></pre>
 
 <h2>
