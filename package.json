@@ -1,23 +1,32 @@
 {
   "name": "jr-qrcode",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "qrcode generator",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-requirejs": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.1"
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "chai": "^3.5.0",
+    "eslint": "^3.3.0",
+    "eslint-config-jr": "^1.0.0",
+    "karma": "<1.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.2.0",
+    "karma-mocha-reporter": "^2.2.0",
+    "karma-power-assert": "0.0.4",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.1.0",
+    "power-assert": "^1.4.1",
+    "webpack": "^1.13.1"
   },
   "dependencies": {},
-  "main": "index.js",
+  "main": "dist/jr-qrcode.js",
   "scripts": {
-    "release": "grunt",
-    "lint": "eslint index.js lib/jr-qrcode.js",
-    "test": "jest"
+    "dist": "webpack -p",
+    "lint": "eslint index.js lib/assign-polyfill.js lib/encode.js lib/jr-qrcode.js",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",

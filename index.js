@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/jr-qrcode');
+module.exports = require('./lib/jr-qrcode.js');

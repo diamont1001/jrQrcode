@@ -14,14 +14,15 @@
 </head>
 <body>
     <img id="qrimg" src="">
-<script type="text/javascript" src="../release/jr-qrcode.js"></script>
+<script type="text/javascript" src="../dist/jr-qrcode.js"></script>
 <script>
-    var data = jrQrcode.getQrBase64("hello jrQrcode", {
+    var data = jrQrcode.getQrBase64("http://m.pp.cn/home.html?debug=dev#footer", {
         padding: 15,
         width: 300,
         height: 300,
         correctLevel: QRErrorCorrectLevel.L
     });
+    console.log(data);
     document.querySelector('#qrimg').setAttribute('src', data);
 
 </script>

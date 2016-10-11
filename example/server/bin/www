@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const app = require('../app'),
+    cluster = require('cluster'),
+    numCPUs = require('os').cpus().length;
+
+// Get port from environment or customlize.
+const port = normalizePort(process.env.PORT || 18340);
+
+// Catch error from app
+app.on('error', (error, ctx)=> {
+    console.log(ctx.url + '-' + error.stack);
+});
+
+if (cluster.isMaster) {
+    for (var i = 0; i < numCPUs; i++) {
+        cluster.fork();
+    }
+    cluster.on('exit', function (worker, code, signal) {
+        console.log('worker ' + worker.process.pid + ' died');
+    });
+} else {
+    app.listen(port, ()=> {
+        console.log('Listening on %d', port);
+    });
+}
+
+// Normalize a port into a number, string, or 0.
+function normalizePort(val) {
+    const port = parseInt(val, 10);
+    if (isNaN(port)) {
+        return val;
+    }
+    if (port >= 0) {
+        return port;
+    }
+    return 0;
+}

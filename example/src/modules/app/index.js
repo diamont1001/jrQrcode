@@ -7,7 +7,7 @@ require('./index.less');
 
 var $ = require('lib1/zepto/main'),
     header2 = require('./header2/header2'),
-    jrQrcode = require('../../../../index');
+    jrQrcode = require('../../../../dist/jr-qrcode.js');
 
 header2.render(document.getElementById('headerWrap'));
 header2.setTitle('detail');
@@ -22,5 +22,6 @@ $('#btnOk').click(function(ev) {
 	    background      : "#ffffff",    //二维码颜色
 	    foreground      : "#000000"     //二维码背景颜色
 	});
+	console.log(url);
 	$('#imgQrCode').attr('src', url);
 });

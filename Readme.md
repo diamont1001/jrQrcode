@@ -9,9 +9,16 @@
 
 ## 插件引用 ##
 ### 传统引用 ###
+
 	<script type="text/javascript" src="release/jr-qrcode.js"></script>
+
 ### 模块化引用(比如：webpack) ###
+
 	require('jr-qrcode');
+
+    // 支持变量引用
+    var jrQrcode = require('jr-qrcode');
+    var imgBase64 = jrQrcode.getQrBase64('hello world');
 
 ## 用法 ##
     var imgBase64 = jrQrcode.getQrBase64(text, options);
