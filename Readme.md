@@ -14,7 +14,7 @@ npm install jr-qrcode
 ### 传统引用 ###
 
 ```
-<script type="text/javascript" src="release/jr-qrcode.js"></script>
+<script type="text/javascript" src="dist/jr-qrcode.js"></script>
 
 <script>
   var imgBase64 = jrQrcode.getQrBase64('hello world');

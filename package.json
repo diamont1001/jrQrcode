@@ -1,6 +1,6 @@
 {
   "name": "jr-qrcode",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "qrcode generator",
   "license": "MIT",
   "devDependencies": {
