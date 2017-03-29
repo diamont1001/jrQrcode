@@ -29,6 +29,8 @@ require('jr-qrcode');
 
 // 方法2：变量引用
 var jrQrcode = require('jr-qrcode');
+
+// 模块方法调用，传入字符串，获取 base64 编码的图片 URL
 var imgBase64 = jrQrcode.getQrBase64('hello world');
 ```
 
