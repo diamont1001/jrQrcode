@@ -37,16 +37,18 @@ var imgBase64 = jrQrcode.getQrBase64('hello world');
 ```js
 var imgBase64 = jrQrcode.getQrBase64(text, options);
 
+/**
 @param: text: 要生成二维码的字符，支持中文
 @param: options: {
-  padding		: 10,   //二维码四边空白，默认为10px
-  width		: 256,  //二维码图片宽度，默认为256px
-  height		: 256,  //二维码图片高度，默认为256px
-  correctLevel	: QRErrorCorrectLevel.H,    //二维码容错level，默认为高
-  background      : "#ffffff",    //二维码颜色
-  foreground      : "#000000"     //二维码背景颜色
+  padding       : 10,   // 二维码四边空白，默认为10px
+  width         : 256,  // 二维码图片宽度，默认为256px
+  height        : 256,  // 二维码图片高度，默认为256px
+  correctLevel  : QRErrorCorrectLevel.H,    // 二维码容错level，默认为高
+  background    : "#ffffff",    // 二维码颜色
+  foreground    : "#000000"     // 二维码背景颜色
 }
 @return: 生成的二维码Base64 URL
+*/
 ```
 
 ## 二维码容错级别 ##
