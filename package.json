@@ -1,6 +1,6 @@
 {
   "name": "jr-qrcode",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "qrcode generator",
   "license": "MIT",
   "devDependencies": {
@@ -26,7 +26,7 @@
   "scripts": {
     "dist": "webpack -p",
     "lint": "eslint index.js lib/assign-polyfill.js lib/encode.js lib/jr-qrcode.js",
-    "test": "karma start"
+    "test": "npm run lint && karma start"
   },
   "repository": {
     "type": "git",

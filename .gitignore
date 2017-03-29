@@ -6,3 +6,4 @@ project.properties.git
 .git/
 
 node_modules/
+coverage/

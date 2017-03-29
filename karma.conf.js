@@ -15,9 +15,9 @@ module.exports = function (config) {
         // list of files / patterns to load in the browser
         files: [
             // all files ending in "_test"
-            // {pattern: 'test/*_test.js', watched: true},
+            {pattern: 'test/*_test.js', watched: true},
             // {pattern: 'test/**/*_test.js', watched: true}
-            {pattern: 'test/bundle_test.js', watched: true}
+            // {pattern: 'test/bundle_test.js', watched: true}
             // each file acts as entry point for the webpack configuration
         ],
 

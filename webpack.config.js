@@ -7,14 +7,15 @@ module.exports = {
     output: {
         path: './dist',
         filename: '[name].js',
-        libraryTarget: 'umd' // 组件采用UMD格式打包
+        libraryTarget: 'umd', // 模块采用UMD格式打包
+        library: 'jrQrcode' // 模块名称
     },
 
     module: {
         loaders: [
             {
                 test: /\.js$/, loader: 'babel-loader',
-                exclude: /(node_modules|libs)/
+                exclude: /(node_modules)/
             }
         ]
     }
