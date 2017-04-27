@@ -1,5 +1,6 @@
 # 二维码js生成库 #
-把字符串生成二维码，并以Base64 URL形式输出
+把字符串生成二维码，并以Base64 URL形式输出。
+支持白色二维码，即反色二维码。
 
 ## 兼容性 ##
 插件使用了H5的canvas特性进行二维码绘制，最后输出base64 url，因此本插件要求运行环境支持canvas特性即可。
@@ -46,6 +47,7 @@ var imgBase64 = jrQrcode.getQrBase64(text, options);
   width         : 256,  // 二维码图片宽度（默认为256px）
   height        : 256,  // 二维码图片高度（默认为256px）
   correctLevel  : QRErrorCorrectLevel.H,    // 二维码容错level（默认为高）
+  reverse       : false,        // 反色二维码，二维码颜色为上层容器的背景颜色
   background    : "#ffffff",    // 二维码背景颜色（默认白色）
   foreground    : "#000000"     // 二维码颜色（默认黑色）
 }

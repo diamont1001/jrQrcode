@@ -1,19 +1,53 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
     <meta name="description" content="jr-qrcode demo in classic">
-	<title>jrQrcode test</title>
-	<style>
-	    body{ font-family: "Microsoft YaHei"; }
-	</style>
+  <title>jrQrcode test</title>
+  <style>
+      body{
+        font-family: "Microsoft YaHei";
+      }
+      #qrcode_reversed {
+        display: flex;
+      }
+      #qrcode_reversed > div:nth-child(1) {
+        margin: 10px;
+        background: red;
+      }
+      #qrcode_reversed > div:nth-child(2) {
+        margin: 10px;
+        background-image: -webkit-gradient(
+            linear,
+            right bottom,
+            right top,
+            color-stop(0, #C4FFC4),
+            color-stop(1, #D64F4F)
+        );
+        background-image: -o-linear-gradient(top, #C4FFC4 0%, #D64F4F 100%);
+        background-image: -moz-linear-gradient(top, #C4FFC4 0%, #D64F4F 100%);
+        background-image: -webkit-linear-gradient(top, #C4FFC4 0%, #D64F4F 100%);
+        background-image: -ms-linear-gradient(top, #C4FFC4 0%, #D64F4F 100%);
+        background-image: linear-gradient(to top, #C4FFC4 0%, #D64F4F 100%);
+      }
+  </style>
 </head>
 <body>
+    <h2>普通二维码</h2>
     <img id="qrimg" src="">
+    <h2>反色二维码</h2>
+    <div id="qrcode_reversed">
+      <div>
+        <img id="qrimg_reverse_1" src="">
+      </div>
+      <div>
+        <img id="qrimg_reverse_2" src="">
+      </div>
+    </div>
 <script type="text/javascript" src="../dist/jr-qrcode.js"></script>
 <script>
     var data = jrQrcode.getQrBase64("http://m.pp.cn/home.html?debug=dev#footer", {
@@ -24,6 +58,24 @@
     });
     console.log(data);
     document.querySelector('#qrimg').setAttribute('src', data);
+    var data = jrQrcode.getQrBase64("http://m.pp.cn/home.html?debug=dev#footer", {
+        padding: 15,
+        width: 300,
+        height: 300,
+        reverse: true,
+        correctLevel: QRErrorCorrectLevel.L
+    });
+    console.log(data);
+    document.querySelector('#qrimg_reverse_1').setAttribute('src', data);
+    var data = jrQrcode.getQrBase64("http://m.pp.cn/home.html?debug=dev#footer", {
+        padding: 15,
+        width: 300,
+        height: 300,
+        reverse: true,
+        correctLevel: QRErrorCorrectLevel.L
+    });
+    console.log(data);
+    document.querySelector('#qrimg_reverse_2').setAttribute('src', data);
 
 </script>
 </body>
