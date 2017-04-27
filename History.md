@@ -1,4 +1,11 @@
 
+1.1.0 / 2017-04-27
+==================
+
+  * Merge pull request #3 from lanceli/master
+  * feat: 支持反色二维码
+  * docs: update Readme.md
+
 1.0.6 / 2017-03-29
 ==================
 
