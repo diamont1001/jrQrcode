@@ -69,5 +69,5 @@ QRErrorCorrectLevel = {
 ## Use cases
 If you are using jrQrcode in production, just tell us.
 
-*	[UC二维码 Chrome 插件](https://chrome.google.com/webstore/detail/uc-qr-code/nhelohnehpahakjoklmodmogclacjgdj?spm=0.0.0.0.Xew8fP&hl=zh-CN "UC二维码Chrome插件")
-* [豌豆荚直搜 Chrome 插件](https://chrome.google.com/webstore/detail/%E8%B1%8C%E8%B1%86%E8%8D%9A%E7%9B%B4%E6%90%9C/eafahahbkiojhlhllnpajnnpfngkpdfn?utm_source=chrome-ntp-icon)
+*	[Jr二维码 Chrome 插件](https://chrome.google.com/webstore/detail/jr-qr/efgpdlpahaaoimppgenfinecaaiebeai)
+* [豌豆荚直搜器 Chrome 插件](https://chrome.google.com/webstore/detail/%E8%B1%8C%E8%B1%86%E8%8D%9A%E7%9B%B4%E6%90%9C/eafahahbkiojhlhllnpajnnpfngkpdfn)
