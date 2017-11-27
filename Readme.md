@@ -70,4 +70,9 @@ QRErrorCorrectLevel = {
 If you are using jrQrcode in production, just tell us.
 
 *	[Jr二维码 Chrome 插件](https://chrome.google.com/webstore/detail/jr-qr/efgpdlpahaaoimppgenfinecaaiebeai)
+
+![](https://raw.githubusercontent.com/diamont1001/jrQrcode/master/docs/chrome-extensions-qr.png)
+
 * [豌豆荚直搜器 Chrome 插件](https://chrome.google.com/webstore/detail/%E8%B1%8C%E8%B1%86%E8%8D%9A%E7%9B%B4%E6%90%9C/eafahahbkiojhlhllnpajnnpfngkpdfn)
+
+![](https://raw.githubusercontent.com/diamont1001/jrQrcode/master/docs/chrome-extensions-wdj.png)
