@@ -69,7 +69,7 @@ QRErrorCorrectLevel = {
 ## Use cases
 If you are using jrQrcode in production, just tell us.
 
-*	[Jr二维码 Chrome 插件](https://chrome.google.com/webstore/detail/jr-qr/efgpdlpahaaoimppgenfinecaaiebeai)
+*	[Jr二维码 Chrome 插件](https://chrome.google.com/webstore/detail/jr-qr/efgpdlpahaaoimppgenfinecaaiebeai)，源码在『[这里](https://github.com/diamont1001/chrome-extensions-qr)』
 
 ![](https://raw.githubusercontent.com/diamont1001/jrQrcode/master/docs/chrome-extensions-qr.png)
 
