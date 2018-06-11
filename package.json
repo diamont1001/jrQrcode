@@ -19,7 +19,7 @@
     "karma-mocha-reporter": "^2.2.0",
     "karma-power-assert": "0.0.4",
     "karma-webpack": "^1.8.0",
-    "mocha": "^3.1.0",
+    "mocha": "^5.2.0",
     "power-assert": "^1.4.1",
     "webpack": "^1.13.1"
   },
