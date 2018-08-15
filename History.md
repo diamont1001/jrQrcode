@@ -1,4 +1,11 @@
 
+1.1.3 / 2018-08-15
+==================
+
+  * deps: upgrage devDependencies
+  * feat: karma version '3.0.0' => '^3.0.0'
+  * feat: karma upgrade to 3.0.0
+
 1.1.2 / 2018-06-11
 ==================
 
