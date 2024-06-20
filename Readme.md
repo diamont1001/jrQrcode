@@ -31,11 +31,21 @@ require('jr-qrcode');
 // 方法2：变量引用
 var jrQrcode = require('jr-qrcode');
 
-// 模块方法调用，传入字符串，获取 base64 编码的图片 URL
-var imgBase64 = jrQrcode.getQrBase64('hello world');
+// import 引入
+import jrQrcode from "jr-qrcode";
 ```
 
 ## 用法 ##
+
+方法调用，传入字符串，获取 base64 编码的图片 URL
+
+比如：
+
+```js
+var imgBase64 = jrQrcode.getQrBase64('hello world');
+```
+
+接口定义：
 
 ```js
 var imgBase64 = jrQrcode.getQrBase64(text, options);
@@ -66,31 +76,9 @@ QRErrorCorrectLevel = {
 };
 ```
 
-## jr-qrcode.d.ts
+## Typescript 类型定义
 
-```ts
-declare module "jr-qrcode" {
-  interface JrQrcodeOptions {
-    padding?: number;
-    width?: number;
-    height?: number;
-    typeNumber?: number;
-    correctLevel?: QRErrorCorrectLevel;
-    reverse?: boolean;
-    background?: string;
-    foreground?: string;
-  }
-  enum QRErrorCorrectLevel {
-    L = 1,
-    M = 0,
-    Q = 3,
-    H = 2,
-  }
-
-  function getQrBase64(text: string, options?: QROptions | string): string;
-  export { getQrBase64, QRErrorCorrectLevel };
-}
-```
+如果你的项目是 TS 的，需要 `x.d.ts`，那么你可以在这里找到：[jr-qrcode.d.ts](https://github.com/diamont1001/jrQrcode/blob/master/typings/jr-qrcode.d.ts)
 
 ## Use cases
 If you are using jrQrcode in production, just tell us.
