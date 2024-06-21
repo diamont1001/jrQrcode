@@ -76,9 +76,9 @@ QRErrorCorrectLevel = {
 };
 ```
 
-## Typescript 类型定义
+## Typescript 支持
 
-如果你的项目是 TS 的，需要 `x.d.ts`，那么你可以在这里找到：[jr-qrcode.d.ts](https://github.com/diamont1001/jrQrcode/blob/master/typings/jr-qrcode.d.ts)
+该项目已支持 TS 的引用，类型声明你可以在这里找到：[jr-qrcode.d.ts](https://github.com/diamont1001/jrQrcode/blob/master/index.d.ts)
 
 ## Use cases
 If you are using jrQrcode in production, just tell us.
